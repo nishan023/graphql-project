@@ -1,5 +1,4 @@
 export const mutations = `#graphql
-  createUser(input: CreateUserInput!): User!
-  updateUser(id: ID!, input: UpdateUserInput!): User!
-  deleteUser(id: ID!): Boolean!
+    register(firstName: String!, lastName: String, email: String!, password: String!): String
+    login(email: String!, password: String!): String
 `;
